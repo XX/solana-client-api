@@ -21,20 +21,20 @@ serde = "1.0.130"
 serde_derive = "1.0.103"
 serde_json = "1.0.68"
 solana-account-decoder = { git = "https://github.com/XX/solana-new" }
-solana-sdk = { git = "https://github.com/solana-labs/solana" }
+solana-sdk = { git = "https://github.com/solana-labs/solana", rev = "41c160d58204cb2a9482f558f7285417dd442349" }
 solana-transaction-status = { git = "https://github.com/XX/solana-new" }
-solana-version = { git = "https://github.com/solana-labs/solana" }
+solana-version = { git = "https://github.com/solana-labs/solana", rev = "41c160d58204cb2a9482f558f7285417dd442349" }
 solana-vote-program = { git = "https://github.com/XX/solana-new" }
 thiserror = "1.0"
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 clap = "2.33.0"
-solana-clap-utils = { git = "https://github.com/solana-labs/solana" }
+solana-clap-utils = { git = "https://github.com/solana-labs/solana", rev = "41c160d58204cb2a9482f558f7285417dd442349" }
 
 [dev-dependencies]
 assert_matches = "1.5.0"
 jsonrpc-http-server = "18.0.0"
-solana-logger = { git = "https://github.com/solana-labs/solana" }
+solana-logger = { git = "https://github.com/solana-labs/solana", rev = "41c160d58204cb2a9482f558f7285417dd442349" }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
